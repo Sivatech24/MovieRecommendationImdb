@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/MovieRecommendationImdb/static/css/main.82510c4b.css",
+    "main.js": "/MovieRecommendationImdb/static/js/main.bae427a9.js",
+    "static/js/156.32bffec1.chunk.js": "/MovieRecommendationImdb/static/js/156.32bffec1.chunk.js",
+    "static/media/LoginAndSignupPageImage.jpg": "/MovieRecommendationImdb/static/media/LoginAndSignupPageImage.825a5b58b2e9bd5c403e.jpg",
+    "static/media/slick.svg": "/MovieRecommendationImdb/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/MovieRecommendationImdb/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/MovieRecommendationImdb/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/MovieRecommendationImdb/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/MovieRecommendationImdb/index.html",
+    "main.82510c4b.css.map": "/MovieRecommendationImdb/static/css/main.82510c4b.css.map",
+    "main.bae427a9.js.map": "/MovieRecommendationImdb/static/js/main.bae427a9.js.map",
+    "156.32bffec1.chunk.js.map": "/MovieRecommendationImdb/static/js/156.32bffec1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82510c4b.css",
+    "static/js/main.bae427a9.js"
+  ]
+}
