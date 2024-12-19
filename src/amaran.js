@@ -18,9 +18,29 @@ import Search from './search';
 import Save from './save';
 import Featured from './featured';
 import Menu from './menu';
+// import of movies
+import Amaran from './amaran';  // Ensure Amaran is a React component
+import Moana from './moana';
+import Dune from './dune';
+import Gladiator from './gladiator';
+import Gladiator1 from './Gladiator1';
+import Luckybaskhar from './luckybaskhar';
+import Wicked from './wicked';
+import IronMan from './IronMan';
+import OurLittleSecret from './OurLittleSecret';
+import Pushpa from './Pushpa';
+import Conclave from './Conclave';
+import SnowWhite from './SnowWhite';
+import DeadpoolWolverine from './DeadpoolWolverine';
+import Smile2 from './Smile2';
+import TheMerryGentlemen from './TheMerryGentlemen';
+import Thor from './Thor';
+import AvengersEndgame from './AvengersEndgame';
+import SquidGame from './SquidGame';
 
 
 const App = () => {
+  const [currentPage, setCurrentPage] = useState(null); // Track the current page for rendering
 
   // const MongoClient = new MongoClient('mongodb+srv://tech:tech2410@movierecommendation.nwujz.mongodb.net/collection?retryWrites=true&w=majority&appName=MovieRecommendation');
   const [currentName, setCurrentName] = useState(null);
@@ -163,6 +183,126 @@ const App = () => {
     return <Search />;
   }
 
+  // pages
+  
+
+  const navigateToMovie = (page) => {
+    switch (page) {
+      case 'amaran':
+        setCurrentPage('amaran'); // Set the page to Amaran
+        break;
+      case 'moana':
+        setCurrentPage('moana'); // Set the page to Avatar
+        break;
+      case 'dune':
+        setCurrentPage('dune'); // Set the page to Inception
+        break;
+      case 'Gladiator':
+        setCurrentPage('Gladiator'); // Set the page to Inception
+        break;
+      case 'Gladiator1':
+        setCurrentPage('Gladiator1'); // Set the page to Inception
+        break;
+      case 'Luckybaskhar':
+        setCurrentPage('Luckybaskhar'); // Set the page to Inception
+        break;
+      case 'Wicked':
+        setCurrentPage('Wicked'); // Set the page to Inception
+        break;
+      case 'IronMan':
+        setCurrentPage('IronMan'); // Set the page to Inception
+        break;
+      case 'OurLittleSecret':
+        setCurrentPage('OurLittleSecret'); // Set the page to Inception
+        break;
+      case 'Pushpa':
+        setCurrentPage('Pushpa'); // Set the page to Inception
+        break;
+      case 'Conclave':
+        setCurrentPage('Conclave'); // Set the page to Inception
+        break;
+      case 'SnowWhite':
+        setCurrentPage('SnowWhite'); // Set the page to Inception
+        break;
+      case 'DeadpoolWolverine':
+        setCurrentPage('DeadpoolWolverine'); // Set the page to Inception
+        break;
+      case 'Smile2':
+        setCurrentPage('Smile2'); // Set the page to Inception
+        break;
+      case 'TheMerryGentlemen':
+        setCurrentPage('TheMerryGentlemen'); // Set the page to Inception
+        break;
+      case 'Thor':
+        setCurrentPage('Thor'); // Set the page to Inception
+        break;
+      case 'AvengersEndgame':
+        setCurrentPage('AvengersEndgame'); // Set the page to Inception
+        break;
+      case 'SquidGame':
+        setCurrentPage('SquidGame'); // Set the page to Inception
+        break;
+      default:
+        window.location.href = page; // Navigate to other URLs
+        break;
+    }
+  };
+
+  if (currentPage === 'amaran') {
+    return <Amaran />; // Render the Amaran component
+  }
+  if (currentPage === 'moana') {
+    return <Moana />; // Render the Avatar component
+  }
+  if (currentPage === 'dune') {
+    return <Dune />; // Render the Inception component
+  }
+  if (currentPage === 'Gladiator') {
+    return <Gladiator />; // Render the Inception component
+  }
+  if (currentPage === 'Gladiator1') {
+    return <Gladiator1 />; // Render the Inception component
+  }
+  if (currentPage === 'Luckybaskhar') {
+    return <Luckybaskhar />; // Render the Inception component
+  }
+  if (currentPage === 'Wicked') {
+    return <Wicked />; // Render the Inception component
+  }
+  if (currentPage === 'IronMan') {
+    return <IronMan />; // Render the Inception component
+  }
+  if (currentPage === 'OurLittleSecret') {
+    return <OurLittleSecret />; // Render the Inception component
+  }
+  if (currentPage === 'Pushpa') {
+    return <Pushpa />; // Render the Inception component
+  }
+  if (currentPage === 'Conclave') {
+    return <Conclave />; // Render the Inception component
+  }
+  if (currentPage === 'SnowWhite') {
+    return <SnowWhite />; // Render the Inception component
+  }
+  if (currentPage === 'DeadpoolWolverine') {
+    return <DeadpoolWolverine />; // Render the Inception component
+  }
+  if (currentPage === 'Smile2') {
+    return <Smile2 />; // Render the Inception component
+  }
+  if (currentPage === 'TheMerryGentlemen') {
+    return <TheMerryGentlemen />; // Render the Inception component
+  }
+  if (currentPage === 'Thor') {
+    return <Thor />; // Render the Inception component
+  }
+  if (currentPage === 'AvengersEndgame') {
+    return <AvengersEndgame />; // Render the Inception component
+  }
+  if (currentPage === 'SquidGame') {
+    return <SquidGame />; // Render the Inception component
+  }
+
   return (
     <div className="app-container">
       {/* Navigation Bar */}
@@ -237,128 +377,128 @@ const App = () => {
         </div>
       </div>
 
-      {/* Recommendation Section */}
+      {/* Top Picks Section */}
       <div className="top-picks">
-        <h2>You May like.</h2>
+        <h2>Top Picks</h2>
         <div className="movie-list">
           <div className="movie-card small">
-            <img src="https://i.ibb.co/h9XCZzW/moana2.jpg" alt="Moana 2" />
+            <img src="https://i.ibb.co/C6MfLLh/moana2.jpg" alt="Moana 2" />
             <div className="movie-info">
               <p>Moana 2</p>
               <span>⭐ 8.7</span>
               <br></br>
               <br></br>
-              <button onClick={toggleModal} className="rate-button">Rate</button>
+              <button onClick={() => navigateToMovie('moana')} className="rate-button">Rate</button>
             </div>
           </div>
           <div className="movie-card small">
-            <img src="https://i.ibb.co/fdMqmMM/Gladiator1.jpg" alt="Gladiator" />
+            <img src="https://i.ibb.co/yP55dpy/gladiator1.jpg" alt="Gladiator" />
             <div className="movie-info">
               <p>Gladiator</p>
               <span>⭐ 9.0</span>
               <br></br>
               <br></br>
-              <button onClick={toggleModal} className="rate-button">Rate</button>
+              <button onClick={() => navigateToMovie('Gladiator')} className="rate-button">Rate</button>
             </div>
           </div>
           <div className="movie-card small">
-            <img src="https://i.ibb.co/9ss1PrX/wicked.jpg" alt="Wicked" />
+            <img src="https://i.ibb.co/1K8yCg7/wicked.jpg" alt="Wicked" />
             <div className="movie-info">
               <p>Wicked</p>
               <span>⭐ 8.5</span>
               <br></br>
               <br></br>
-              <button onClick={toggleModal} className="rate-button">Rate</button>
+              <button onClick={() => navigateToMovie('Wicked')} className="rate-button">Rate</button>
             </div>
           </div>
           <div className="movie-card small">
-            <img src="https://i.ibb.co/hDxwqgQ/lucky-baskhar.jpg" alt="lucky-baskhar" />
+            <img src="https://i.ibb.co/7bX8f88/lucky-baskhar.jpg" alt="lucky-baskhar" />
             <div className="movie-info">
               <p>Lucky-baskhar</p>
               <span>⭐ 8.0</span>
               <br></br>
               <br></br>
-              <button onClick={toggleModal} className="rate-button">Rate</button>
+              <button onClick={() => navigateToMovie('Luckybaskhar')} className="rate-button">Rate</button>
             </div>
           </div>
           <div className="movie-card small">
-            <img src="https://i.ibb.co/1XN8w6Z/IronMan.jpg" alt="IronMan" />
+            <img src="https://i.ibb.co/5M11sx2/IronMan.jpg" alt="IronMan" />
             <div className="movie-info">
               <p>IronMan</p>
               <span>⭐ 9.0</span>
               <br></br>
               <br></br>
-              <button onClick={toggleModal} className="rate-button">Rate</button>
+              <button onClick={() => navigateToMovie('IronMan')} className="rate-button">Rate</button>
             </div>
           </div>
           <div className="movie-card small">
-            <img src="https://i.ibb.co/4M10dP5/Our-Little-Secret.jpg" alt="WOur-Little-Secret" />
+            <img src="https://i.ibb.co/m0ys75J/Our-Little-Secret.jpg" alt="Our-Little-Secret" />
             <div className="movie-info">
               <p>Our Little Secret</p>
               <span>⭐ 8.5</span>
               <br></br>
               <br></br>
-              <button onClick={toggleModal} className="rate-button">Rate</button>
+              <button onClick={() => navigateToMovie('OurLittleSecret')} className="rate-button">Rate</button>
             </div>
           </div>
           <div className="movie-card small">
-            <img src="https://i.ibb.co/cCz9WyJ/Pushpa.jpg" alt="Pushpa2" />
+            <img src="https://i.ibb.co/WpkRfzX/Pushpa.jpg" alt="Pushpa2" />
             <div className="movie-info">
               <p>Pushpa 2</p>
               <span>⭐ 8.5</span>
               <br></br>
               <br></br>
-              <button onClick={toggleModal} className="rate-button">Rate</button>
+              <button onClick={() => navigateToMovie('Pushpa')} className="rate-button">Rate</button>
             </div>
           </div>
           <div className="movie-card small">
-            <img src="https://i.ibb.co/HCkVrxq/Conclave.jpg" alt="Conclave" />
+            <img src="https://i.ibb.co/9NZHsYn/Conclave.jpg" alt="Conclave" />
             <div className="movie-info">
               <p>Conclave</p>
               <span>⭐ 8.0</span>
               <br></br>
               <br></br>
-              <button onClick={toggleModal} className="rate-button">Rate</button>
+              <button onClick={() => navigateToMovie('Conclave')} className="rate-button">Rate</button>
             </div>
           </div>
           <div className="movie-card small">
-            <img src="https://i.ibb.co/343PDx9/Snow-White.jpg" alt="Snow-White" />
+            <img src="https://i.ibb.co/V3WThWT/Snow-White.jpg" alt="Snow-White" />
             <div className="movie-info">
               <p>Snow White</p>
               <span>⭐ 8.0</span>
               <br></br>
               <br></br>
-              <button onClick={toggleModal} className="rate-button">Rate</button>
+              <button onClick={() => navigateToMovie('SnowWhite')} className="rate-button">Rate</button>
             </div>
           </div>
           <div className="movie-card small">
-            <img src="https://i.ibb.co/tY9L6Yj/The-Merry-Gentlemen.jpg" alt="The-Merry-Gentlemen" />
+            <img src="https://i.ibb.co/Z2Mb45s/The-Merry-Gentlemen.jpg" alt="The-Merry-Gentlemen" />
             <div className="movie-info">
               <p>The Merry Gentlemen</p>
               <span>⭐ 8.5</span>
               <br></br>
               <br></br>
-              <button onClick={toggleModal} className="rate-button">Rate</button>
+              <button onClick={() => navigateToMovie('TheMerryGentlemen')} className="rate-button">Rate</button>
             </div>
           </div>
           <div className="movie-card small">
-            <img src="https://i.ibb.co/TmZTG6N/Avengers-Endgame.jpg" alt="Avengers-Endgame" />
+            <img src="https://i.ibb.co/ZmZj9bC/Avengers-Endgame1.jpg" alt="Avengers-Endgame" />
             <div className="movie-info">
               <p>Avengers Endgame</p>
               <span>⭐ 9.0</span>
               <br></br>
               <br></br>
-              <button onClick={toggleModal} className="rate-button">Rate</button>
+              <button onClick={() => navigateToMovie('AvengersEndgame')} className="rate-button">Rate</button>
             </div>
           </div>
           <div className="movie-card small">
-            <img src="https://i.ibb.co/dfPLzCD/Squid-Game.jpg" alt="Squid-Game" />
+            <img src="https://i.ibb.co/nkSYfQg/Squid-Game.jpg" alt="Squid-Game" />
             <div className="movie-info">
               <p>Squid Game</p>
               <span>⭐ 8.0</span>
               <br></br>
               <br></br>
-              <button onClick={toggleModal} className="rate-button">Rate</button>
+              <button onClick={() => navigateToMovie('SquidGame')} className="rate-button">Rate</button>
             </div>
           </div>
         </div>
